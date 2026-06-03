@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A polished ice cream landing page for a modern dessert shop.">
+    <title>Velvet Scoop Ice Cream</title>
+    <link rel="preload" href="https://raw.githubusercontent.com/SeanUTK/Da/main/icecream/assets/hero-icecream.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Velvet Scoop home">
+        <span class="brand-mark">VS</span>
+        <span>Velvet Scoop</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#flavors">Flavors</a>
+        <a href="#occasions">Occasions</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="header-cta" href="#order">Order</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Small-batch ice cream, made daily</p>
+          <h1>Velvet Scoop Ice Cream</h1>
+          <p class="lead">
+            Creamy scoops, bright seasonal flavors, and handmade cones for slow afternoons,
+            quick cravings, and celebrations that deserve something cold and beautiful.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#order">Build a box</a>
+            <a class="button secondary" href="#flavors">See flavors</a>
+          </div>
+          <dl class="stats" aria-label="Shop highlights">
+            <div>
+              <dt>18</dt>
+              <dd>daily flavors</dd>
+            </div>
+            <div>
+              <dt>7 min</dt>
+              <dd>pickup prep</dd>
+            </div>
+            <div>
+              <dt>4.9</dt>
+              <dd>guest rating</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-media" aria-label="Colorful ice cream cones">
+          <img src="https://raw.githubusercontent.com/SeanUTK/Da/main/icecream/assets/hero-icecream.png" alt="Colorful scoops of ice cream in a waffle cone">
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Today's shop notes">
+        <span>Fresh waffle cones from 10:00</span>
+        <span>Strawberry basil is back</span>
+        <span>Free sprinkles on kids scoops</span>
+      </section>
+
+      <section class="section" id="flavors">
+        <div class="section-heading">
+          <p class="eyebrow">Today's freezer</p>
+          <h2>Flavors with a point of view</h2>
+          <p>Balanced, rich, and made for mixing. Pick a scoop, a flight, or a freezer box.</p>
+        </div>
+        <div class="flavor-grid">
+          <article class="flavor-card">
+            <span class="swatch strawberry"></span>
+            <h3>Strawberry Basil</h3>
+            <p>Garden strawberries, basil ribbon, and a clean cream finish.</p>
+            <strong>$4.80</strong>
+          </article>
+          <article class="flavor-card">
+            <span class="swatch pistachio"></span>
+            <h3>Roasted Pistachio</h3>
+            <p>Toasted nuts, sea salt, and a dense custard body.</p>
+            <strong>$5.20</strong>
+          </article>
+          <article class="flavor-card">
+            <span class="swatch mango"></span>
+            <h3>Mango Lassi</h3>
+            <p>Alphonso mango, yogurt tang, cardamom, and lime zest.</p>
+            <strong>$4.90</strong>
+          </article>
+          <article class="flavor-card">
+            <span class="swatch cocoa"></span>
+            <h3>Midnight Cocoa</h3>
+            <p>Dark chocolate, brownie crumble, and espresso depth.</p>
+            <strong>$5.40</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="split" id="occasions">
+        <div>
+          <p class="eyebrow">For every table</p>
+          <h2>Cones, catering, and freezer boxes.</h2>
+        </div>
+        <div class="occasion-list">
+          <article>
+            <h3>Walk-in scoops</h3>
+            <p>Fast service, crisp cones, and tasting spoons ready.</p>
+          </article>
+          <article>
+            <h3>Party carts</h3>
+            <p>A staffed cart with six flavors, sauces, and toppings.</p>
+          </article>
+          <article>
+            <h3>Home freezer boxes</h3>
+            <p>Four pints packed cold with cones and topping jars.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <blockquote>
+          "The kind of ice cream shop that makes a normal Tuesday feel like a tiny holiday."
+        </blockquote>
+        <p>Local Guide Review</p>
+      </section>
+
+      <section class="order" id="order">
+        <div>
+          <p class="eyebrow">Order ahead</p>
+          <h2>Build your scoop box</h2>
+          <p>Choose any four pints, add cones, and pick up cold in under ten minutes.</p>
+        </div>
+        <form class="order-form">
+          <label>
+            Box size
+            <select>
+              <option>Four-pint box</option>
+              <option>Two-pint box</option>
+              <option>Party dozen cups</option>
+            </select>
+          </label>
+          <label>
+            Pickup time
+            <input type="time" value="14:30">
+          </label>
+          <button class="button primary" type="button" data-toast>Reserve my box</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="visit">
+      <div>
+        <strong>Velvet Scoop</strong>
+        <p>14 Creamery Lane, open daily 10:00-22:00</p>
+      </div>
+      <a href="tel:+15550123456">+1 555 012 3456</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast-box>
+      Box reserved for preview.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
